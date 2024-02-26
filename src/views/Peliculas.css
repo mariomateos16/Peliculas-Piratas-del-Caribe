@@ -1,0 +1,363 @@
+.main {
+  font-family: "Quicksand"; 
+  overflow: hidden;
+  background-color: #181a19;
+}
+
+.pelicula-titulo {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  width: 400px;
+  padding: 1rem;
+  padding-top: 80px;
+}
+
+.background-1 {
+  background-image:linear-gradient(to bottom, transparent -100%, #181a19 100%), url('https://static.abc.es/media/peliculas/000/014/864/piratas-del-caribe-la-maldicion-de-la-perla-negra-2.jpg');
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-2 {
+  background-image:linear-gradient(to bottom, transparent -100%, #181a19 100%), url('https://www.isla-pirata.com/wp-content/uploads/2021/10/Davy-Jones-Piratas-del-Caribe.jpeg');
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-3 {
+  background-image:linear-gradient(to bottom, transparent -100%, #181a19 100%), url('https://i0.wp.com/cuatrobastardos.com/wp-content/uploads/2019/04/Parley_AWE.jpg?resize=1334%2C667&ssl=1');
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-4 {
+  background-image:linear-gradient(to bottom, transparent -100%, #181a19 100%), url('https://i.blogs.es/a3a868/piratas-caribe-mareas-misteriosas/1366_2000.jpeg');
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-5 {
+  background-image:linear-gradient(to bottom, transparent -100%, #181a19 100%), url('https://hips.hearstapps.com/hmg-prod/images/piratas-del-caribe-la-venganza-de-salazar-2017-con-javier-bardem-diez-minutos-jpg-1609115503.jpg?crop=0.9491188880615538xw:1xh;center,top&resize=1200:*');
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titulo_detalles {
+  background: linear-gradient(to top, #161616 5%, #ffffff 40%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.container_pelicula {
+  color: #ffffff;
+  display: flex;
+  border: 6px solid rgb(216, 245, 237);
+  box-shadow: 5px 5px 5px #8d8d8d;
+  width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  margin-top: 20px;
+  transition: all 300ms ease-in-out;
+}
+
+.container_pelicula:hover {
+  transform: scale(1.03);
+}
+
+.container_pelicula-left {
+  flex: 0 0 60%;
+  padding: 0rem 3rem;
+  border-right: 1px solid #ffffff;
+}
+
+.titulo_sinopsis {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.sinopsis_description {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.container_pelicula-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 1.5rem;
+  margin-left: 30px;
+  flex: 0 0 40%;
+}
+
+.bloque-arriba,
+.bloque-abajo {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.section_personajes {
+  padding: 2rem 2rem;
+}
+
+.container_personajes {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card_personaje {
+  padding: 2rem 2rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  width: calc(25% - 10px);
+  margin-bottom: 50px; 
+  transition: all 200ms ease-in-out;
+  background-image: url('https://img.freepik.com/premium-photo/brown-grunge-background-with-space-text-image_196038-10334.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_personaje:hover {
+  box-shadow: 2px 2px 5px #cfcfcf, -2px -2px 5px #cfcfcf;
+  transform: translateY(-10px);
+} 
+
+img.imagen_personaje {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #223b32, -5px -5px 10px #223b32;
+}
+
+.personaje_name {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+
+.personaje_description {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.etiqueta {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+@media (max-width: 1265px) {
+
+  .container_pelicula {
+    width: 1000px;
+  }
+
+  .bloque-abajo h3 {
+    font-size: 1.1rem;
+  }
+
+  .bloque-arriba h3 {
+    font-size: 0.9rem;
+  }
+
+  .bloque-abajo p {
+    font-size: 0.9rem;
+  }
+
+  .bloque-arriba p {
+    font-size: 0.9rem;
+  }
+  
+}
+
+@media (max-width: 1075px) {
+
+  .container_pelicula {
+    width: 850px;
+  }
+
+  .container_pelicula-right {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+    .bloque-abajo h3 {
+    font-size: 1.1rem;
+  }
+
+  .bloque-arriba h3 {
+    font-size: 1.1rem;
+  }
+
+  .bloque-abajo p {
+    font-size: 0.9rem;
+  }
+
+  .bloque-arriba p {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .container_pelicula {
+    flex-direction: column;
+    width: 600px;
+  }
+
+  .container_pelicula-left {
+    border-right: 0px;
+  }
+
+  .container_pelicula-right {
+    flex-direction: row;
+    border-top: 1px solid #ffffff;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .container_pelicula {
+    flex-direction: column;
+    width: 500px;
+    padding: 5px;
+  }
+
+  .container_pelicula-right {
+    flex-direction: row;
+    border-top: 1px solid #ffffff;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 530px) {
+
+  .container_pelicula {
+    flex-direction: column;
+    width: calc(100% - 30px);
+    padding: 10px;
+  }
+
+  .sinopsis_description {
+    font-size: 0.8rem;
+  }
+
+  .container_pelicula-right {
+    flex-direction: row; 
+  }
+
+  .bloque-abajo h3 {
+    font-size: 0.9rem;
+  }
+
+  .bloque-arriba h3 {
+    font-size: 0.9rem;
+  }
+
+  .bloque-abajo p {
+    font-size: 0.7rem;
+  }
+
+  .bloque-arriba p {
+    font-size: 0.7rem;
+  }
+
+}
+
+@media (max-width: 470px) {
+
+  .container_pelicula {
+    flex-direction: column;
+    width: calc(100% - 30px);
+    padding: 10px;
+  }
+
+  .sinopsis_description {
+    font-size: 0.8rem;
+  }
+
+  .container_pelicula-right {
+    flex-direction: row; 
+    flex-wrap: nowrap;
+  }
+
+  .bloque-abajo h3 {
+    font-size: 0.8rem;
+  }
+
+  .bloque-arriba h3 {
+    font-size: 0.8rem;
+  }
+
+  .bloque-abajo p {
+    font-size: 0.6rem;
+  }
+
+  .bloque-arriba p {
+    font-size: 0.6rem;
+  }
+  
+}
+
+
+@media (max-width: 1020px) {
+
+  .container_personajes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card_personaje {
+    width: calc(50% - 5px);
+  }
+}
+
+@media (max-width: 680px) {
+
+  .container_personajes {
+    flex-direction: column;
+  }
+
+  .card_personaje {
+    width: 100%;
+  }
+
+}
