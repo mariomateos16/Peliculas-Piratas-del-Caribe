@@ -6,6 +6,7 @@ import personajesPiratasDelCaribe5 from '../data/personajes.js';
 import peliculas from '../data/peliculas.js'
 
 function PeliculaView5({ id }) {
+  const navigate = useNavigate();
 
   const pelicula = peliculas.find((p) => p.id === 5);
 
@@ -54,6 +55,11 @@ function PeliculaView5({ id }) {
               </div>
             ))}
           </div>
+
+        <div className='button_container'>
+          <button className='buttonVolver' onClick={() => navigate('/')}>Volver</button>
+        </div> 
+
       </section>
     </main>
   )
