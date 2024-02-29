@@ -177,6 +177,51 @@ img.imagen_personaje {
   color: #1a1a1a;
 }
 
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonVolver {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #181a19;
+  background-color: #D2C28B;
+  font-size: 1.3rem;
+  border: 4px solid #857140;
+  font-family: "Quicksand";
+  font-weight: bold;
+  z-index: 2;
+}
+
+.buttonVolver:hover {
+  cursor: pointer;
+  color: #181a19;
+}
+
+.buttonVolver::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: -200%;
+  background-color: #af9655;
+  border-radius: 50%;
+  transition: all 300ms ease;
+  z-index: -1;
+}
+
+.buttonVolver:hover::before {
+  top: 0;
+  border-radius: 0%;
+}
+
+
+
 @media (max-width: 1265px) {
 
   .container_pelicula {
@@ -334,9 +379,7 @@ img.imagen_personaje {
   .bloque-arriba p {
     font-size: 0.6rem;
   }
-  
 }
-
 
 @media (max-width: 1020px) {
 
