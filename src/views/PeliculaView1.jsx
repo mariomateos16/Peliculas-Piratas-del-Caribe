@@ -5,13 +5,11 @@ import peliculas from '../data/peliculas.js'
 import personajesPiratasDelCaribe1 from '../data/personajes.js';
 import titulo from '../assets/img/logopelicula1.png';
 
-
 function PeliculaView1({ id }) {
   const navigate = useNavigate();
 
   const pelicula = peliculas.find((p) => p.id === 1);
   
-
   return (
     <main className='main'>
       <div className='background-1'>
@@ -57,12 +55,14 @@ function PeliculaView1({ id }) {
               </div>
             ))}
           </div>
+
+        <div className='button_container'>
+          <button className='buttonVolver' onClick={() => navigate('/')}>Volver</button>
+        </div>
+
       </section>
     </main>
   );
 }
 
 export default PeliculaView1;
-
-
-{/* <button onClick={() => navigate('/')}>Volver a la lista de películas</button> */}
